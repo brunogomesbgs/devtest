@@ -10,3 +10,10 @@ CREATE TABLE elevator_states (
     floor INTEGER,
     vacant BOOLEAN
 );
+
+CREATE TABLE elevator_origins (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    floor INTEGER,
+    qtt INTEGER
+);
